@@ -26,7 +26,7 @@
 
 **Plugin Developer/Contributor**
 - Fork existing Obsidian plugin to add enhanced memory capabilities 
-- Implement Cognee-style external memory system integration
+- Implement Cognee-style external memory system integration ( https://docs.cognee.ai/core-concepts/architecture )
 - Ensure backward compatibility with existing functionality
 - Test performance with large datasets and complex workflows
 
