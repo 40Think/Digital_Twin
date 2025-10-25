@@ -49,7 +49,7 @@
 
 This project will focus on a straightforward, practical approach:
 
-1. **Target Plugin**: Select an existing open-source Obsidian plugin that can accommodate enhanced memory functionality
+1. **Target Plugin**: Select an existing open-source Obsidian plugin that can accommodate enhanced memory functionality - Smart Connections / Smart Chat / Smart Composer OR Copilot.  
 2. **Memory System**: Implement Cognee-style external memory system as primary enhancement  
 3. **Integration Method**: Choose between three approaches:
    - **MCP Connection**: Enable external memory access through Model Context Protocol for maximum flexibility
