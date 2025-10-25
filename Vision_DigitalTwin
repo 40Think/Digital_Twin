@@ -2,7 +2,35 @@
 
 ## Product Statement (60 words max)
 
-**Customer:** Obsidian users wanting to enhance their knowledge management with better memory systems, particularly advanced external memory capabilities. **What they want:** Simple integration of superior memory architecture that works seamlessly within existing Obsidian workflows. **Current market:** Basic note-taking with limited memory handling. **Problem:** Standard Obsidian lacks robust external memory systems for complex cognitive tasks. **Solution:** Fork an existing open-source plugin to add enhanced memory functionality, specifically Cognee-based external memory system.
+**Customer:** Obsidian users wanting to enhance their 
+knowledge management with better memory systems, particularly 
+advanced external memory capabilities. 
+**What they want:** Simple integration of superior memory 
+architecture that works seamlessly within existing Obsidian 
+workflows. **Current market:** Basic note-taking with limited
+memory handling. **Problem:** Standard Obsidian lacks robust 
+external memory systems for complex cognitive tasks. 
+**Solution:** Fork an existing open-source plugin to 
+add enhanced memory functionality, specifically 
+Cognee-based external memory system.
+
+The essence for me, and for those who are on the same wavelength as me, 
+this is VERY needed for these people. The quality of communication with 
+AI depends very much on the quality of external memory (called RAG). 
+If there's no good one - it leads to failures and irritation.
+There can also be a bad RAG. Obsidian is a program for creating a 
+Second Brain from markdown files and connections between them. 
+Copilot and Smart Connections plugins integrate LLMs, giving you 
+the ability to talk with your own Second Brain. Their weakness 
+is numerous bugs and they were designed for storage systems
+with 50-200 notes; if given 500-1000 notes - they crash. 
+The Cognee system imitates human memory by means of vector
+and graph databases along with intelligent search powered 
+by LLMs within the memory itself. When integrated into these 
+plugins (I've written an LLM solution for integration in a 
+ticket that spans about 200 lines) - it increases the 
+quality of communication with AI by orders of magnitude,
+providing enormous benefit.
 
 ## Stakeholders and Needs
 
