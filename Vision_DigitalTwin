@@ -1,108 +1,112 @@
-# Vision: Enhanced Memory System Plugin for Obsidian
+# Vision: Digital Twin for Obsidian
 
-## Product Statement (60 words max)
+## Executive Summary 
 
-**Customer:** Obsidian users wanting to enhance their 
-knowledge management with better memory systems, particularly 
-advanced external memory capabilities. 
-**What they want:** Simple integration of superior memory 
-architecture that works seamlessly within existing Obsidian 
-workflows. **Current market:** Basic note-taking with limited
-memory handling. **Problem:** Standard Obsidian lacks robust 
-external memory systems for complex cognitive tasks. 
-**Solution:** Fork an existing open-source plugin to 
-add enhanced memory functionality, specifically 
-Cognee-based external memory system.
+Transformation of Obsidian Copilot from Second Brain into a Digital Twin platform. By integrating advanced external RAG memory systems, secure arbitrary code execution, and digital twin capabilities, we create an intelligent knowledge management system that evolves beyond traditional note-taking. This solution enables users to build interactive digital identities while maintaining seamless integration with existing Obsidian workflows.
 
-The essence for me, and for those who are on the same wavelength as me, 
-this is VERY needed for these people. The quality of communication with 
-AI depends very much on the quality of external memory (called RAG). 
-If there's no good one - it leads to failures and irritation.
-There can also be a bad RAG. Obsidian is a program for creating a 
-Second Brain from markdown files and connections between them. 
-Copilot and Smart Connections plugins integrate LLMs, giving you 
-the ability to talk with your own Second Brain. Their weakness 
-is numerous bugs and they were designed for storage systems
-with 50-200 notes; if given 500-1000 notes - they crash. 
-The Cognee system imitates human memory by means of vector
-and graph databases along with intelligent search powered 
-by LLMs within the memory itself. When integrated into these 
-plugins (I've written an LLM solution for integration in a 
-ticket that spans about 200 lines) - it increases the 
-quality of communication with AI by orders of magnitude,
-providing enormous benefit.
+## Product Statement
 
-## Stakeholders and Needs
+**Target Users:** Advanced Obsidian users seeking sophisticated AI assistance for complex knowledge management
+**Primary Need:** Robust external memory systems that scale beyond 100GB vaults and support advanced cognitive processes. Batch and agentic Markdown LLM processing. Stable work.
+**Current Limitation:** Existing plugins struggle with large-scale knowledge bases, lacking efficient context engineering and secure code execution
+**Solution:** Transform Obsidian Copilot into a Digital Twin orchestration platform that integrates Cognee-style memory systems, enables secure Python/LangChain/LangGraph execution, and supports digital twin evolution.
+
+## Stakeholders and Their Requirements
 
 **Primary Stakeholders:**
-- **Advanced Obsidian Users**: Need better memory management for complex projects
-- **Research Professionals**: Require sophisticated knowledge organization systems  
-- **Knowledge Workers**: Want more effective personal AI assistance
+- **Advanced Knowledge Workers**: Need scalable knowledge management for complex projects with 50K+ notes
+- **Research Professionals**: Require sophisticated AI assistance and external memory integration  
+- **AI Developers**: Want secure code execution capabilities within Obsidian environment
 
 **Secondary Stakeholders:**
-- **Plugin Developers**: Interested in enhancing existing tools rather than building from scratch
-- **Community Contributors**: Want to improve open-source solutions
-- **Future Users**: Will benefit from enhanced memory capabilities
+- **Plugin Contributors**: Seek modular enhancements that don't break existing functionality
+- **System Integrators**: Need reliable API/MCP connections for external systems
+- **Future Users**: Expect scalable solutions handling 100GB+ vaults with interactive digital identities. During demonstration of benefits - users will be all Obsidian users.
 
-**Needs:**
-- Users: Better external memory handling for large knowledge bases
-- Developers: Easy-to-integrate enhancements that don't break existing functionality  
-- Community: Improved plugin ecosystem with better memory management
-- Future Users: Scalable systems that can handle complex cognitive processes
+**Requirements:**
+- Scalability: Handle 50K+ notes and 100GB+ vault sizes without performance degradation
+- Security: Secure execution of arbitrary Python/LangChain/LangGraph code  
+- Integration: Seamless connection to external memory systems via API/MCP
+- Stable Glue-role of plugin - the plugin acts as a glue role connecting different programs, providing high stability and fault tolerance when working with large repositories.
 
-## Actors and Features
+## Value Proposition for Obsidian Users
 
-**Plugin Developer/Contributor**
-- Fork existing Obsidian plugin to add enhanced memory capabilities 
-- Implement Cognee-style external memory system integration ( https://docs.cognee.ai/core-concepts/architecture )
-- Ensure backward compatibility with existing functionality
-- Test performance with large datasets and complex workflows
+Obsidian's core strength is building second brains through interconnected notes. However, current systems struggle with:
+- Large-scale knowledge management beyond 200 notes
+- Advanced retrieval and organization capabilities  
+- Integration of external memory that maintains context continuity
+- Sophisticated AI assistance without losing local control
 
-**End User (Advanced Knowledge Worker)**
-- Access enhanced external memory through familiar Obsidian interface  
-- Use advanced retrieval and organization features for research projects
-- Benefit from improved knowledge structuring capabilities during deep work sessions
-- Leverage integrated AI assistance with better memory context
-
-## Quality Requirements (6 max)
-
-1. **Performance**: Work stable, no crash and bugs.
-2. **Compatibility**: Must work seamlessly with existing Obsidian plugins and workflows  
-3. **Scalability**: Handle knowledge bases of 50K+ notes without performance degradation. In future 1-100 GB Vault size.
-4. **Integration**: Smooth connection to external memory systems via MCP or direct API
-5. **Reliability**: Zero data corruption during memory operations (99.9% uptime)
-6. **Usability**: Minimal learning curve - enhancement should feel like natural Obsidian extension
+Our enhanced platform addresses these gaps by providing superior external memory integration while preserving Obsidian's familiar interface.
 
 ## Technical Approach & Implementation Strategy
 
-This project will focus on a straightforward, practical approach:
+The overall approach - transforming Obsidian Copilot from an AI chat into a glue-plugin, not trying to do everything itself, which connects large complex products (RAG, LLM, LangGraph programs) together, and their combined work provides Digital Twin. Without attempting to do everything inside Copilot, only connecting ready-made excellent products that can be replaced.
 
-1. **Target Plugin**: Select an existing open-source Obsidian plugin that can accommodate enhanced memory functionality - Smart Connections / Smart Chat / Smart Composer OR Copilot.  
-2. **Memory System**: Implement Cognee-style external memory system as primary enhancement  
-3. **Integration Method**: Choose between three approaches:
-   - **MCP Connection**: Enable external memory access through Model Context Protocol for maximum flexibility
-   - **API Integration**: Direct API calls to external memory services (simpler but less flexible)
-   - **Direct Code Integration**: Modify plugin codebase directly to handle memory operations
+Transformation of Obsidian Copilot from Second Brain (20-200 static markdown notes) into a Digital Twin platform (Entire thinkflow and life experience of user - 10-100k of markdown + LangGraph agents + LLM + agenticRAG Vector+Graph+Relational database + LLM Reranker)
 
-4. **Implementation Priority**:
-   - Primary goal: Enable robust external memory with better retrieval and organization than default Obsidian system
-   - Secondary goals: Support multiple memory types, improved indexing, semantic search capabilities  
-   - Tertiary goals: Automated knowledge structuring based on user cognitive patterns
+### Phase 1: Foundation Layer 
+**Focus**: External Memory Integration and Context Engineering  
+- Implement Cognee-style external memory system with vector+graph+relational database capabilities
+- Develop hybrid retrieval system combining embedding similarity and BM25 scoring, accounting for tags and folders in the ranking of memory. 
+- Initially, simply run Python code manually as interactive functions; in the future, create sandboxing within the plugin and execution through the plugin on schedule, commands, including round-the-clock and parallel operation.
 
-## Why This Matters for Obsidian Users
+### Phase 2: Digital Twin Capabilities   
+**Focus**: Digital Twin Evolution and Advanced Features
+Writing LangGraph programs that automate digital twin evolution - for example, local Deep Research, which reads a note, and based on 20-40 steps writes thoughts about it, creates folders with thoughts, automatically establishes connections between them, tags, names files and folders, sorts, searches online, and together with the human automatically writes thoughts about this note.
 
-Obsidian's core strength is building second brains through interconnected notes. However, existing systems struggle with:
-- Large-scale knowledge management
-- Advanced retrieval and organization beyond simple tagging
-- Integration of external memory systems that maintain context
-- Sophisticated AI assistance without losing local control
+Moving this to external LangGraph code is necessary to avoid overloading the plugin and give people access to deep customization independent of Obsidian and Copilot.
 
-Our enhancement addresses these gaps by providing a superior external memory system that works within Obsidian's familiar framework.
+### Phase 3: Advanced Features 
+**Focus**: System Optimization and User Experience Enhancement
+- Develop performance optimization for large vaults  
+- Integrate new functions (call LangGraph code, refresh memory, manual select RAG retrieved files from GUI) into UI for complex overlay capabilities
+- Establish security auditing mechanisms for code execution
+- Create secure sandboxed execution environment for Python/LangChain/LangGraph code
 
-## Expected Impact & Timeline  
+## Success Metrics & Development Timeline
 
-**Immediate Impact**: Users gain better memory management capabilities for complex projects and research workflows  
-**Short-term (30 days)**: Plugin released with core enhanced memory features
-**Mid-term (90 days)**: Community adoption, feedback integration for further improvements
+**Immediate Impact**: Fix current small bugs in Copilot  
+**Short-term (30 days)**: Full integration RAG Cognee  
+**Mid-term (90 days)**: Create advanced LangGraph external function  
+**Long-term (180 days)**: Full digital twin capabilities and enterprise deployment readiness. Refactor from scratch entire codebase.
 
-The solution focuses on what users actually need - a practical enhancement to existing functionality rather than grand architectural visions.
+## Risk Mitigation & Quality Assurance
+
+### Key Risks:
+- Performance degradation with large vaults [^1]
+- Security vulnerabilities in external code execution  
+- Backward compatibility issues during transformation
+- Integration complexity with external memory systems [^2]
+- Inappropriateness of the current plugin code for complex Digital Twin functions, therefore memory and complex functions should be moved externally, adding only glue connection points to them. 
+- 
+
+### Mitigation Strategies:
+- Incremental implementation with extensive testing and validation
+- **Problem with current AI plugins in Obsidian** - they internally build low-quality bicycles with subpar logic and memory systems for AI. These systems freeze, crash, and conflict with Obsidian and other plugins. Instead, we need to create a glue-plugin that simply connects components, while memory and indexing are transferred to high-quality programs that operate as separate processes or even standalone servers. Complex logic shouldn't be embedded within the main application; instead, we should utilize LangGraph, which was specifically designed for this purpose and will also execute autonomously without causing conflicts or freezes in Obsidian.
+- Robust security framework from initial release
+- Comprehensive backward compatibility verification
+- Clear versioning strategy for feature releases
+
+## Implementation Scope & Constraints
+
+**Technical Requirements:**
+1. External Memory Systems (API, MCP, Direct Connection)  
+2. Advanced Context Engineering with Multi-source Fusion
+3. Secure Arbitrary Code Execution Framework
+4. Performance Optimization for Large Vaults [^4]
+
+**Constraints:**
+- Must maintain backward compatibility with existing Obsidian workflows
+- Security requirements must support user-controlled code execution  
+- Integration points must work seamlessly across different external systems
+
+## Future Roadmap Considerations
+
+This vision establishes the foundation for:
+1. Enterprise-level knowledge management capabilities
+2. Cross-platform deployment options  
+3. Community-driven plugin extensions (custom LangGraph code from community)
+4. Advanced cognitive architecture integration. Each person can transfer their thinking methods into LangGraph code and markdown notes.
+5. In future, after testing in Obsidian - refactor from scratch to standalone Enterprise level application. 
+
