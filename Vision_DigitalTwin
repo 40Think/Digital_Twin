@@ -27,7 +27,7 @@ Transformation of Obsidian Copilot from Second Brain into a Digital Twin platfor
 - Scalability: Handle 50K+ notes and 100GB+ vault sizes without performance degradation
 - Security: Secure execution of arbitrary Python/LangChain/LangGraph code  
 - Integration: Seamless connection to external memory systems via API/MCP
-- Stable Glue-role of plugin - the plugin acts as a glue role connecting different programs, providing high stability and fault tolerance when working with large repositories.
+- Stable Glue-role of plugin - the plugin acts as a glue role connecting different programs, providing high stability and fault tolerance when working with large Vaults.
 
 ## Value Proposition for Obsidian Users
 
